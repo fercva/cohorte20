@@ -1,0 +1,24 @@
+/* selector universal
+*/
+pre {
+    color: blueviolet;
+}
+/*selector de tipo*/
+em {
+    color: crimson;
+}
+/*selector de clase*/
+.titulo 
+{
+    color: blue;
+}
+.bl 
+{
+    float: right;
+    background-color: black;
+    color: azure;
+}
+/*selector de ID*/
+#selector{
+color: rgb(100, 237, 111);
+}

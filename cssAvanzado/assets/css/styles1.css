@@ -1,0 +1,13 @@
+.texto1{
+    font-family:'David Libre', serif;
+    font-weight: 600;
+    font-size: 1.5;
+    color: brown;
+}
+
+.texto2{
+    font-family: 'Tomorrow', sans-serif;
+    font-weight: 700;
+    font-size: 1.5;
+    color: midnightblue;
+}
