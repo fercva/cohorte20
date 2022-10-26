@@ -1,0 +1,14 @@
+.container {
+    background: violet;
+    margin-top: 20px;
+}
+
+.uno{
+    background: aqua;
+}
+.dos{
+    background: bisque;
+}
+.ancho{
+    background: lightcoral;
+}

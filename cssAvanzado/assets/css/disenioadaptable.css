@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.padre{
+    border: 3px dashed green;
+    display: flex;
+    flex-direction: row; /*siempre se pone el display flex para activarlo*/
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+
+    /*height: 600px;*/
+
+}
+
+.menu{
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+}
+
+.logo{
+    display: flex;
+    width: 300px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+img{
+    width: 100px;
+}
+
+.cuadro{
+    width: 80px;
+    height: 80px;
+
+}
+
+.uno{
+    background-color: chartreuse;
+}
+
+.dos{
+    background-color: blueviolet;
+
+}
+.tres{
+    background-color: coral;
+}
+
+/*row-fila
+ Justify- content - horizontal
+align-items- vertical*/
+/*column-columna
+Justify- content - vertical
+align-items- horizontal*/
+/* media querys
+@media (){
+}  es una condicional , si se cumple una condicion, se aplica lo que hay
+dentro de la regla*/
+
+
+/* resolucion de adaptacion @media
+450 px para celular
+800 px para tablet
+1200 px para una computadora*/
+/**/
+@media (max-width: 500px) {
+    .padre{
+        background-color: crimson;
+        flex-direction: column;
+        height: auto;
+    }
+
+    h3{
+    display: none;
+    }
+
+    .logo{
+    flex-direction: column;
+    align-items: center;
+    }
+    
+    .menu{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
