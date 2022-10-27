@@ -29,7 +29,7 @@
           </div>
         </div>
        <!-- una nueva fila --> 
-       <div class="row">
+       <div class="row text-center">
         <div class="col">
           1 de 3
         </div>
@@ -42,6 +42,121 @@
       </div>
           </div>
       </div>
+
+      <div class="row justify-content-md-center">
+        <div class="col col-lg-2">
+          1 de 3
+        </div>
+        <div class="col-md-auto">
+          Contenido de ancho variable
+        </div>
+        <div class="col col-lg-2">
+          3 de 3
+        </div>
+
+        <div class="row">
+          <div class="col n">col</div>
+          <div class="col e">col</div>
+          <div class="col ne">col</div>
+          <div class="col no">col</div>
+        </div>
+  
+      </div>
+<!-- esto es un boton-->
+<button type="button" class="btn btn-primary">Primary</button>
+<button type="button" class="btn btn-secondary">Secondary</button>
+<button type="button" class="btn btn-success">Success</button>
+<button type="button" class="btn btn-danger">Danger</button>
+<button type="button" class="btn btn-warning">Warning</button>
+<button type="button" class="btn btn-info">Info</button>
+<button type="button" class="btn btn-light">Light</button>
+<button type="button" class="btn btn-dark">Dark</button>
+
+<button type="button" class="btn btn-link">Enlace</button>
+      
+<!--Etiquetas de los botones -->
+
+<a class="btn btn-primary" href="#" role="button">Enlace</a>
+<button class="btn btn-primary" type="submit">Botón</button>
+<input class="btn btn-primary" type="button" value="Input">
+<input class="btn btn-primary" type="submit" value="Submit">
+<input class="btn btn-primary" type="reset" value="Reset">
+
+
+<!--Botones de contorno-->
+
+<button type="button" class="btn btn-outline-primary">Primary</button>
+<button type="button" class="btn btn-outline-secondary">Secondary</button>
+<button type="button" class="btn btn-outline-success">Success</button>
+<button type="button" class="btn btn-outline-danger">Danger</button>
+<button type="button" class="btn btn-outline-warning">Warning</button>
+<button type="button" class="btn btn-outline-info">Info</button>
+<button type="button" class="btn btn-outline-light">Light</button>
+<button type="button" class="btn btn-outline-dark">Dark</button>
+
+
+<!--Tamaño de botnoes -->
+<!--grande-->
+<button type="button" class="btn btn-primary btn-lg">Botón grande</button>
+<button type="button" class="btn btn-secondary btn-lg">Botón grande</button>
+<!--Pequeño-->
+<button type="button" class="btn btn-primary btn-sm">Botón pequeño</button>
+<button type="button" class="btn btn-secondary btn-sm">Botón pequeño</button>
+<!--Boton deshabilitado-->
+
+<button type="button" class="btn btn-lg btn-primary" disabled>Botón primary</button>
+<button type="button" class="btn btn-secondary btn-lg" disabled>Botón</button>
+
+
+<!--Alertas-->
+
+<div class="alert alert-primary" role="alert">
+  Una simple alerta primary: ¡échale un vistazo!
+</div>
+<div id="liveAlertPlaceholder"></div>
+<button type="button" class="btn btn-primary" id="liveAlertBtn">Mostrar alerta en vivo</button>
+<script>
+const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+var alertTrigger = document.getElementById('liveAlertBtn')
+
+function alert(message, type) {
+  var wrapper = document.createElement('div')
+  wrapper.innerHTML = '<div class="alert alert-' + type + ' alert-dismissible" role="alert">' + message + '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>'
+
+  alertPlaceholder.append(wrapper)
+}
+
+if (alertTrigger) {
+  alertTrigger.addEventListener('click', function () {
+    alert('Genial, activaste este mensaje de alerta.', 'success')
+  })
+}
+</script>
+<!--esto es un modal-->
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Lanzar demo de modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Título del modal</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Guardar cambios</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
     <script src="./bootstrap-5/js/bootstrap.bundle.min.js"></script>
