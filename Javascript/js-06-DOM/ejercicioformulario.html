@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio</title>
+</head>
+<body>
+    <h1>Suma</h1>
+    <form id="formulariosuma">
+        numero 1 <input type="text" name="valor0" value="0"><br>
+        numero 2 <input type="text" name="valor1" value="0">
+    </form >
+    <button onclick="suma()">Mostrar</button>
+<br>
+    <div id="valores"></div>
+    <script>
+            
+            function suma() {
+            let formulario = document.forms ["formularioSuma"]
+            let resultado = '';
+            let valor0= formulario ['valor0'];
+            let valor1= formulario ['valor1'];
+            resultado = parseInt (valor0.value) + parseInt(valor1.value);
+            console.log(valor0.value);
+            console.log(valor1.value);
+            console.log(resultado);
+            document.getElementById('valores').innerHTML = resultado;
+        }
+     </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <!--<h1>Datos personales</h1>
+    <form id="formulario">
+        nombre <input type="text" name="nombre" value="Fernanda"><br>
+        Apellido <input type="text" name="apellido" value="Cervantes">
+    </form >
+    <button onclick="mostrarValores()">Mostrar</button>
+    <div id="valores"></div>
+    <script>
+        function mostrarValores(){
+
+            let formulario = document.forms ["formulario"]
+            let texto = '';
+            for (let elemento of formulario ){
+               texto += elemento.value + '<br/>';
+            }
+           document.getElementById('valores').innerHTML=texto;
+        }
+    </script>-->
+
+<!--<h1>Ejemplo de DOM document.write</h1>
+<button onclick="cambio()">mostrar</button>
+
+<script>
+function cambio(){
+
+document.write('Saludo');
+
+}
+
+</script>-->
+
+<h1>Dom imagenes</h1>
+
+ <button onclick="cambiar()">cambio</button>
+<br>
+<img id="imagen" src="./Bellota-_chica_superpoderosa_-_ppg.webp" alt="bellota">
+
+
+<script>
+    function cambiar(){
+        
+        document.getElementById('imagen').src = "/Javascript/js-06-DOM/Cover_noticia_BillyYMandy.jpg";
+
+    }
+</script>
+
+
+
+
+
+</body>
+
+</html>
