@@ -22,3 +22,9 @@ function funcio11() {
  
 }
 funcio11();
+
+var libro = {
+    titulo:"El señor de los anillos",
+    autor:"J.RR",
+    informacion : function (){return this.titulo + "escrito por" + this.autor};
+}
