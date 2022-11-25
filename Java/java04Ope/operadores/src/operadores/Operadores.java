@@ -11,7 +11,7 @@ public class Operadores {
 		//String dato = scanner.nextLine();
 		//System.out.println("El dato es: " + dato);
 		
-		System.out.println("Introduced valor 1 ");
+		System.out.println("Introduce valor 1 ");
 		int valor1 = scanner.nextInt();
 		
 		System.out.println("Introduce valor 0 ");
