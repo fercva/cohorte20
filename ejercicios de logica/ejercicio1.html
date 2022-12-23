@@ -1,0 +1,48 @@
+<script>
+    let num1 = Number(prompt("valor del primer numero"));
+let num2 = Number(prompt("valor del segundo numero"));
+let num3 = Number(prompt("valor del tercer numero"));
+document.write("el orden de los numeros es: "+num1+" "+num2+" "+num3);
+document.write("<br>")
+function mayor(){
+    if(num1>=num2 && num1>=num3 &&num2>=num3){
+        document.write("el orden de mayor a menor es: "+num1+" "+num2+" "+num3);
+        document.write("<br>")} 
+else if(num1>=num3 && num1>=num2 &&num2<=num3){
+    document.write("el orden de mayor a menor es: "+num1+" "+num3+" "+num2);
+    document.write("<br>")}
+else if(num2>=num1 && num2>=num3 &&num1>=num3){
+    document.write("el orden de mayor a menor es: "+num2+" "+num1+" "+num3);
+    document.write("<br>")}
+ else if(num2>=num3 && num2>=num1 &&num1<=num3){
+    document.write("el orden de mayor a menor es: "+num2+" "+num3+" "+num1);
+    document.write("<br>")}
+else if(num3>=num1 && num3>=num2 &&num1>=num2){
+    document.write("el orden de mayor a menor es: "+num3+" "+num1+" "+num2);
+    document.write("<br>")} 
+else if(num3>=num2 && num3>=num1 &&num1<=num2){
+    document.write("el orden de mayor a menor es: "+num3+" "+num2+" "+num1);
+    document.write("<br>")}
+}mayor();
+function menor(){
+    if(num1<=num2 && num1<=num3 &&num2<=num3){
+        document.write("el orden de menor a mayor es: "+num1+" "+num2+" "+num3);
+        document.write("<br>")} 
+else if(num1<=num3 && num1<=num2 &&num2>=num3){
+    document.write("el orden de menor a mayor es: "+num1+" "+num3+" "+num2);
+    document.write("<br>")}
+else if(num2<=num1 && num2<=num3 &&num1<=num3){
+    document.write("el orden de menor a mayor es:"+num2+" "+num1+" "+num3);
+    document.write("<br>")}
+ else if(num2<=num3 && num2<=num1 &&num1>=num3){
+    document.write("el orden de menor a mayor es:"+num2+" "+num3+" "+num1);
+    document.write("<br>")}
+else if(num3<=num1 && num3<=num2 &&num1<=num2){
+    document.write("el orden de menor a mayor es: "+num3+" "+num1+" "+num2);
+    document.write("<br>")}
+ else if(num3<=num2 && num3<=num1 &&num1>=num2){
+    document.write("el orden de menor a mayor es: "+num3+" "+num2+" "+num1);
+    document.write("<br>")}
+}menor();
+
+</script>

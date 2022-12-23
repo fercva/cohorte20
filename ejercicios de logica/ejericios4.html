@@ -1,0 +1,13 @@
+<script>
+
+    let a = 0, b = 1, c, n;
+    let numero =Number(prompt("escoje un digito de la  serie fibonacci"));
+    document.write("el digito fibonacci es: " );       
+    for (let i = 0; i < numero; i++) {
+           
+               document.write(a+",");
+               c = a + b;
+               a = b;
+               b = c;
+           }
+    </script>

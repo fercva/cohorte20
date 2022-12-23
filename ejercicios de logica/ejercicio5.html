@@ -1,0 +1,19 @@
+<script>
+    var numeroPensado = Math.round(Math.random()*100);
+	var intentos = 3;
+	var contador = 1;
+	while (contador <= intentos) {
+    var numeroLanzado = parseInt(prompt("Ingresa un digito del 1-100"));
+    if (numeroPensado == numeroLanzado){
+        alert("felicidades el digito secreto es "+numeroPensado+" tuviste "+intentos+" faillidos"+ " el digito es"+numeroPensado);
+        break;
+    }else {
+      alert("repite otra vez" );   
+    }
+		contador++;
+	}if (numeroPensado == numeroLanzado){
+document.write("felicidades  el digito secreto "+numeroPensado+" tuviste "+intentos+" fallidos"+ " el digito es"+numeroPensado);
+}else {
+    document.write("fallaste la respuesta es " + numeroPensado);
+}
+</script>
